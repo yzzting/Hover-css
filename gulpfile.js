@@ -12,7 +12,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 gulp.task('sass', function() {
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src('./scss/main.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('./dist/css'));
 });
@@ -33,6 +33,7 @@ gulp.task('jade', function() {
 gulp.task('watch', ['sass','jade'],function() {
     gulp.watch('./scss/**/*.scss', ['sass']);
     gulp.watch('./template/jade/index.jade',['jade']);
+    gulp.watch('./template/jade/**/*.jade',['jade']);
 });
 
 gulp.task('deploy', function () {
@@ -41,14 +42,17 @@ gulp.task('deploy', function () {
 });
 
 // 监视 Sass 文件的改动，如果发生变更，运行 'sass' 任务，并且重载文件
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass','jade'], function() {
   browserSync({
     server: {
       baseDir: 'dist'
     }
   });
-
-  gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch('./scss/main.scss',['sass']);
+  gulp.watch('./scss/effects/*.scss', ['sass']);
+  gulp.watch('./scss/page/*.scss', ['sass']);
+  gulp.watch('./template/jade/index.jade',['jade']);
+  gulp.watch('./template/jade/**/*.jade',['jade']);
 });
 
 gulp.task('default',['jade','sass','serve','sass-lint']);
