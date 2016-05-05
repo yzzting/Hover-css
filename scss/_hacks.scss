@@ -1,0 +1,25 @@
+@mixin hardwareAccel() {
+    @include prefixed(transform, translateZ(0));
+    //欺骗浏览器开启GPU
+}
+
+@mixin improveAntiAlias() {
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+}
+
+@mixin fontSmooth {
+    backface-visibility: hidden;
+    //这句代码修复在 Chrome and Safari中，当我们使用CSS transforms 或者 animations时可能会有页面闪烁的效果
+}
+
+@mixin forceBlockLevel {
+    display: inline-block;
+    vertical-align: middle;//元素中线与父元素的小写x中线对齐。
+}
+
+@mixin hacks() {
+    @include forceBlockLevel();
+    @include hardwareAccel();
+    @include fontSmooth();
+    @include improveAntiAlias();
+}

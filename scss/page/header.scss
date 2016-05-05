@@ -1,9 +1,16 @@
+@import "color";
 header {
     text-align: center;
-span{
-    font:{
-        family:'yzz';
-        size:5rem;
+    span {
+        font: {
+            family: 'yzz';
+            size: 9rem;
+        }
+        color: $main-color;
     }
-}
+    p{
+        font:{
+            size:1.5rem;
+        }
+    }
 }
