@@ -1,0 +1,36 @@
+header {
+  text-align: center; }
+  header span {
+    font-family: 'yzz';
+    font-size: 9rem;
+    color: #ff96d8; }
+  header p {
+    font-size: 1.5rem; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px; }
+
+.effects {
+  margin-top: 10%; }
+  .effects [class^="hvr-"] {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #ff96d8;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; }
+
+@font-face {
+  font-family: 'yzz';
+  src: url("../fonts/cathsgbr.eot");
+  src: url("../fonts/cathsgbr.eot?#iefix") format("embedded-opentype"), url("../fonts/cathsgbr.woff") format("woff"), url("../fonts/cathsgbr.ttf") format("truetype"), url("../fonts/cathsgbr.svg#cathsgbr") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
