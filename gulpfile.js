@@ -17,11 +17,11 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('sass-lint', function () {
-  gulp.src('scss/**/*.scss')
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
+gulp.task('sass-lint', function() {
+    gulp.src('scss/**/*.scss')
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError());
 });
 
 gulp.task('jade', function() {
@@ -30,29 +30,33 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('watch', ['sass','jade'],function() {
+gulp.task('watch', ['sass', 'jade'], function() {
     gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch('./template/jade/index.jade',['jade']);
-    gulp.watch('./template/jade/**/*.jade',['jade']);
+    gulp.watch('./scss/**/**/*.scss', ['sass']);
+    gulp.watch('./template/jade/index.jade', ['jade']);
+    gulp.watch('./template/jade/**/*.jade', ['jade']);
 });
 
-gulp.task('deploy', function () {
-    return gulp.src('site/**/*')
+gulp.task('build', ['jade', 'sass']);
+
+gulp.task('deploy', ['build'], function() {
+    return gulp.src('dist/**/*')
         .pipe(ghPages());
 });
 
 // 监视 Sass 文件的改动，如果发生变更，运行 'sass' 任务，并且重载文件
-gulp.task('serve', ['sass','jade'], function() {
-  browserSync({
-    server: {
-      baseDir: 'dist'
-    }
-  });
-  gulp.watch('./scss/main.scss',['sass']);
-  gulp.watch('./scss/effects/*.scss', ['sass']);
-  gulp.watch('./scss/page/*.scss', ['sass']);
-  gulp.watch('./template/jade/index.jade',['jade']);
-  gulp.watch('./template/jade/**/*.jade',['jade']);
+gulp.task('serve', ['sass', 'jade'], function() {
+    browserSync({
+        server: {
+            baseDir: 'dist'
+        }
+    });
+    gulp.watch('./scss/main.scss', ['sass']);
+    gulp.watch('./scss/effects/*.scss', ['sass']);
+    gulp.watch('./scss/effects/**/*.scss', ['sass']);
+    gulp.watch('./scss/page/*.scss', ['sass']);
+    gulp.watch('./template/jade/index.jade', ['jade']);
+    gulp.watch('./template/jade/**/*.jade', ['jade']);
 });
 
-gulp.task('default',['jade','sass','serve','sass-lint']);
+gulp.task('default', ['jade', 'sass', 'serve', 'sass-lint']);

@@ -1,4 +1,4 @@
-// prefix declarations
+// 加前缀
 @mixin prefixed($property, $value) {
   @if $webkit == true {
     -webkit-#{$property}: #{$value};
@@ -19,7 +19,7 @@
   #{$property}: #{$value};
 }
 
-// prefix keyframes
+// 定义动画的前缀
 @mixin keyframes($name) {
   @if $webkit == true {
     @-webkit-keyframes #{$name} {

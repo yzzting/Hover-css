@@ -10,3 +10,31 @@
         @include grow();
     }
 }
+
+@import "effects/2d-transitions/shrink";
+@if $includeClasses {
+    .#{$nameSpace}-shrink{
+        @include shrink();
+    }
+}
+
+@import "effects/2d-transitions/pulse";
+@if $includeClasses {
+    .#{$nameSpace}-pulse{
+        @include pulse();
+    }
+}
+
+@import "effects/2d-transitions/pulse-grow";
+@if $includeClasses {
+    .#{$nameSpace}-pulse-grow{
+        @include pulse-grow();
+    }
+}
+
+@import "effects/2d-transitions/pulse-shrink";
+@if $includeClasses {
+    .#{$nameSpace}-pulse-shrink{
+        @include pulse-shrink();
+    }
+}

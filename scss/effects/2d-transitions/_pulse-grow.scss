@@ -1,0 +1,24 @@
+/**
+ * pulce
+ */
+//定义动画
+@include keyframes(#{$nameSpace}-pulse-grow) {
+    //to 定义了元素结束的样式
+    to{
+        @include prefixed(transform,scale(1.1));
+    }
+}
+
+
+@mixin pulse-grow {
+    @include hacks();
+    &:active,
+    &:focus,
+    &:hover {
+        @include prefixed(animation-name,#{$nameSpace}-pulse-grow);
+        @include prefixed(animation-duration,$mediumDuration);
+        @include prefixed(animation-timing-function,linear);
+        @include prefixed(animation-iteration-count,infinite);
+        @include prefixed(animation-direction, alternate);
+    }
+}

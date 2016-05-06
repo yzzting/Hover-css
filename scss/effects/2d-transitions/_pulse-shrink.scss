@@ -1,0 +1,24 @@
+/**
+ * pulce
+ */
+//定义动画
+@include keyframes(#{$nameSpace}-pulse-shrink) {
+    //to 定义了元素结束的样式
+    to{
+        @include prefixed(transform,scale(.9));
+    }
+}
+
+
+@mixin pulse-shrink {
+    @include hacks();
+    &:active,
+    &:focus,
+    &:hover {
+        @include prefixed(animation-name,#{$nameSpace}-pulse-shrink);
+        @include prefixed(animation-duration,$mediumDuration);//运动时间
+        @include prefixed(animation-timing-function,linear);//重复动画
+        @include prefixed(animation-iteration-count,infinite);
+        @include prefixed(animation-direction, alternate);//动画交替反向运行
+    }
+}
