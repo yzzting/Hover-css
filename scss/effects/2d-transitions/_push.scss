@@ -1,0 +1,25 @@
+/**
+ * push
+ */
+@include keyframes(#{$nameSpace}-push) {
+    50% {
+        @include prefixed(transform,scale(0.8));
+    }
+
+    100% {
+        @include prefixed(transform,scale(1));
+    }
+};
+
+@mixin push {
+    @include hacks();
+
+    &:active,
+    &:focus,
+    &:hover{
+        @include prefixed(animation-name,#{$nameSpace}-push);
+        @include prefixed(animation-duration, $mediumDuration);
+        @include prefixed(animation-iteration-count, 1);
+        @include prefixed(animation-timing-function, linear);
+    }
+}

@@ -38,3 +38,17 @@
         @include pulse-shrink();
     }
 }
+
+@import "effects/2d-transitions/push";
+@if $includeClasses {
+    .#{$nameSpace}-push{
+        @include push();
+    }
+}
+
+@import "effects/2d-transitions/pop";
+@if $includeClasses {
+    .#{$nameSpace}-pop{
+        @include pop();
+    }
+}
