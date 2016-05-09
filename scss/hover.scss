@@ -80,3 +80,17 @@
         @include grow-rotate();
     }
 }
+
+@import "effects/2d-transitions/float";
+@if $includeClasses {
+    .#{$nameSpace}-float{
+        @include float();
+    }
+}
+
+@import "effects/2d-transitions/sink";
+@if $includeClasses {
+    .#{$nameSpace}-sink{
+        @include sink();
+    }
+}

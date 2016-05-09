@@ -1,0 +1,17 @@
+/**
+ * sink
+ */
+
+@mixin sink {
+    @include hacks();
+
+    @include prefixed(transition-duration,$slowDuration);
+    @include prefixed(transition-timing-function,ease-out);
+    @include prefixed(transition-property,transform);//指定transform进行过渡
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include prefixed(transform, translateY(8px));
+    }
+}
