@@ -52,3 +52,31 @@
         @include pop();
     }
 }
+
+@import "effects/2d-transitions/bounce-in";
+@if $includeClasses {
+    .#{$nameSpace}-bounce-in{
+        @include bounce-in();
+    }
+}
+
+@import "effects/2d-transitions/bounce-out";
+@if $includeClasses {
+    .#{$nameSpace}-bounce-out{
+        @include bounce-out();
+    }
+}
+
+@import "effects/2d-transitions/rotate";
+@if $includeClasses {
+    .#{$nameSpace}-rotate{
+        @include rotate();
+    }
+}
+
+@import "effects/2d-transitions/grow-rotate";
+@if $includeClasses {
+    .#{$nameSpace}-grow-rotate{
+        @include grow-rotate();
+    }
+}

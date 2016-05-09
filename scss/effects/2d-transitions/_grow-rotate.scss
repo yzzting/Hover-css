@@ -1,0 +1,15 @@
+/**
+ * grow-rotate
+ */
+
+@mixin grow-rotate {
+    @include hacks();
+    @include prefixed(transition-duration,$slowDuration);
+
+    &:hover,
+    &:active,
+    &:focus {
+        @include prefixed(transform,rotate(7deg) scale(1.1));
+        @include prefixed(transition-timing-function,east-out);
+    }
+}

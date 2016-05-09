@@ -1,0 +1,15 @@
+/**
+ * rotate
+ */
+
+@mixin rotate {
+    @include hacks();
+    @include prefixed(transition-duration,$slowDuration);
+
+    &:hover,
+    &:focus,
+    &:active{
+        @include prefixed(transform,rotate(9deg));
+        @include prefixed(transition-timing-function,ease-out);
+    }
+}
