@@ -143,3 +143,38 @@
         @include wobble-vertical();
     }
 }
+
+@import "effects/2d-transitions/wobble-to-bottom-right";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-to-bottom-right{
+        @include wobble-to-bottom-right();
+    }
+}
+
+@import "effects/2d-transitions/wobble-to-top-right";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-to-top-right{
+        @include wobble-to-top-right();
+    }
+}
+
+@import "effects/2d-transitions/wobble-top";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-top{
+        @include wobble-top();
+    }
+}
+
+@import "effects/2d-transitions/wobble-bottom";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-bottom{
+        @include wobble-bottom();
+    }
+}
+
+@import "effects/2d-transitions/wobble-skew";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-skew{
+        @include wobble-skew();
+    }
+}
