@@ -21,7 +21,7 @@ a {
 .effects {
   margin-top: 10%; }
   .effects [class^="hvr-"] {
-    margin: .4em;
+    margin: .5em;
     padding: 1em;
     cursor: pointer;
     background: #ff96d8;
