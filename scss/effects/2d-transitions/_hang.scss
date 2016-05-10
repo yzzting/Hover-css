@@ -1,0 +1,39 @@
+/**
+ * bob
+ */
+
+@include keyframes(#{$nameSpace}-hang) {
+    0% {
+        @include prefixed(transform,translateY(8px));
+    }
+    50% {
+        @include prefixed(transform,translateY(4px));
+    }
+    100% {
+        @include prefixed(transform,translateY(8px));
+    }
+}
+
+@include keyframes(#{$nameSpace}-hang-float) {
+    100% {
+        @include prefixed(transform,translateY(8px));
+    }
+}
+
+@mixin hang {
+    @include hacks();
+
+    &:active,
+    &:focus,
+    &:hover {
+        @include prefixed(animation-name,"#{$nameSpace}-hang-float,#{$nameSpace}-hang");
+        @include prefixed(animation-duration,".3s, 1.5s");
+        @include prefixed(animation-delay,"0s, .3s");
+        @include prefixed(animation-timing-function,"ease-out,ease-in-out");
+        @include prefixed(animation-iteration-count,"1, infinite");
+        @include prefixed(animation-fill-mode,"forwards");//目标保持动画最后一帧的样式
+        @include prefixed(animation-direction,"normal, alternate");
+        //normal每个循环内动画向前循环，换言之，每个动画循环结束，动画重置到起点重新开始，这是默认属性。
+        //alternate动画交替反向运行，反向运行时，动画按步后退，同时，带时间功能的函数也反向，比如，ease-in 在反向时成为ease-out。计数取决于开始时是集数迭代还是偶数迭代
+    }
+}

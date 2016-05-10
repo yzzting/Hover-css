@@ -94,3 +94,17 @@
         @include sink();
     }
 }
+
+@import "effects/2d-transitions/bob";
+@if $includeClasses {
+    .#{$nameSpace}-bob{
+        @include bob();
+    }
+}
+
+@import "effects/2d-transitions/hang";
+@if $includeClasses {
+    .#{$nameSpace}-hang{
+        @include hang();
+    }
+}
