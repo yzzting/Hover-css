@@ -129,3 +129,17 @@
         @include skew-backward();
     }
 }
+
+@import "effects/2d-transitions/wobble-horizontal";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-horizontal{
+        @include wobble-horizontal();
+    }
+}
+
+@import "effects/2d-transitions/wobble-vertical";
+@if $includeClasses {
+    .#{$nameSpace}-wobble-vertical{
+        @include wobble-vertical();
+    }
+}
