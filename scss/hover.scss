@@ -108,3 +108,24 @@
         @include hang();
     }
 }
+
+@import "effects/2d-transitions/skew";
+@if $includeClasses {
+    .#{$nameSpace}-skew{
+        @include skew();
+    }
+}
+
+@import "effects/2d-transitions/skew-forward";
+@if $includeClasses {
+    .#{$nameSpace}-skew-forward{
+        @include skew-forward();
+    }
+}
+
+@import "effects/2d-transitions/skew-backward";
+@if $includeClasses {
+    .#{$nameSpace}-skew-backward{
+        @include skew-backward();
+    }
+}
