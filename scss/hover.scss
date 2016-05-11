@@ -178,3 +178,17 @@
         @include wobble-skew();
     }
 }
+
+@import "effects/2d-transitions/buzz";
+@if $includeClasses {
+    .#{$nameSpace}-buzz{
+        @include buzz();
+    }
+}
+
+@import "effects/2d-transitions/buzz-out";
+@if $includeClasses {
+    .#{$nameSpace}-buzz-out{
+        @include buzz-out();
+    }
+}
