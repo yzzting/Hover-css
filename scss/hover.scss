@@ -192,3 +192,10 @@
         @include buzz-out();
     }
 }
+
+@import "effects/background-transitions/fade";
+@if $includeClasses {
+    .#{$nameSpace}-fade {
+        @include fade();
+    }
+}

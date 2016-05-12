@@ -1,0 +1,16 @@
+/**
+ * fade
+ */
+
+@mixin fade {
+    @include hacks();
+    overflow: hidden;
+    @include prefixed(transition-duration,$mediumDuration);
+    @include prefixed(transition-property,"color,background-color");
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: $background;
+    }
+}

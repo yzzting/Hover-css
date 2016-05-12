@@ -1,0 +1,15 @@
+/**
+ * fade
+ */
+
+@mixin fade {
+    @include hacks();
+    overflow: hidden;
+    @include prefixed(transition-duration, $mediumDuration);
+    @include prefixed(transition-property, background-color);//过度
+    &:hover,
+    &:focus,
+    &:active {
+        background: $background;
+    }
+}
