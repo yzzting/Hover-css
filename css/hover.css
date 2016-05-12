@@ -1057,4 +1057,41 @@
   -webkit-transition-property: background-color;
   transition-property: background-color; }
   .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-    background: #b4adb5; }
+    background-color: #b4adb5; }
+
+/**
+ * back-pulse
+ */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: #d2cdd2; } }
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: #d2cdd2; } }
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color; }
+  .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: 1;
+    animation-timing-function: 1;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    background: #b4adb5;
+    background-color: #bab7ba; }
