@@ -206,3 +206,10 @@
         @include back-pulse();
     }
 }
+
+@import "effects/background-transitions/sweep-to-right";
+@if $includeClasses {
+    .#{$nameSpace}-sweep-to-right {
+        @include sweep-to-right();
+    }
+}
