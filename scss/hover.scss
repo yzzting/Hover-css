@@ -213,3 +213,24 @@
         @include sweep-to-right();
     }
 }
+
+@import "effects/background-transitions/sweep-to-left";
+@if $includeClasses {
+    .#{$nameSpace}-sweep-to-left {
+        @include sweep-to-left();
+    }
+}
+
+@import "effects/background-transitions/sweep-to-top";
+@if $includeClasses {
+    .#{$nameSpace}-sweep-to-top {
+        @include sweep-to-top();
+    }
+}
+
+@import "effects/background-transitions/sweep-to-bottom";
+@if $includeClasses {
+    .#{$nameSpace}-sweep-to-bottom {
+        @include sweep-to-bottom();
+    }
+}
