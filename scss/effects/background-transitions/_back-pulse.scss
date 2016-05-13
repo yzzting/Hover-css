@@ -4,7 +4,7 @@
 
 @include keyframes(#{$nameSpace}-back-pulse) {
     50% {
-        background-color:rgb(210, 205, 210);
+        background-color:rgb(146, 144, 250);
     }
 }
 
@@ -24,6 +24,6 @@
         @include prefixed(animation-duration,1s);
 
         background: $hoverColor;
-        background-color: rgb(186, 183, 186);
+        background-color: rgb(107, 104, 237);
     }
 }

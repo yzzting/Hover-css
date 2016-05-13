@@ -234,3 +234,17 @@
         @include sweep-to-bottom();
     }
 }
+
+@import "effects/background-transitions/bounce-to-right";
+@if $includeClasses {
+    .#{$nameSpace}-bounce-to-right {
+        @include bounce-to-right();
+    }
+}
+
+@import "effects/background-transitions/bounce-to-left";
+@if $includeClasses {
+    .#{$nameSpace}-bounce-to-left {
+        @include bounce-to-left();
+    }
+}
