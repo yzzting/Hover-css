@@ -1057,18 +1057,18 @@
   -webkit-transition-property: background-color;
   transition-property: background-color; }
   .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-    background-color: #b4adb5; }
+    background-color: #9290fa; }
 
 /**
  * back-pulse
  */
 @-webkit-keyframes hvr-back-pulse {
   50% {
-    background-color: #d2cdd2; } }
+    background-color: #9290fa; } }
 
 @keyframes hvr-back-pulse {
   50% {
-    background-color: #d2cdd2; } }
+    background-color: #9290fa; } }
 
 .hvr-back-pulse {
   display: inline-block;
@@ -1093,8 +1093,8 @@
     animation-delay: 0.5s;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    background: #b4adb5;
-    background-color: #bab7ba; }
+    background: #9290fa;
+    background-color: #6b68ed; }
 
 /**
  * sweep-to-right
@@ -1117,7 +1117,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #b4adb5;
+    background-color: #9290fa;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -1153,7 +1153,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #b4adb5;
+    background-color: #9290fa;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 100% 50%;
@@ -1189,7 +1189,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #b4adb5;
+    background-color: #9290fa;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -1225,7 +1225,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #b4adb5;
+    background-color: #9290fa;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 0 0;
@@ -1239,3 +1239,79 @@
   .hvr-sweep-to-bottom:active:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:hover:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1); }
+
+/**
+ * bounce-to-right
+ */
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .hvr-bounce-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #9290fa;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: transform;
+    transition-duration: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-bounce-to-right:active:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/**
+ * bounce-to-left
+ */
+.hvr-bounce-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .hvr-bounce-to-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #9290fa;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: transform;
+    transition-duration: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-bounce-to-left:active:before, .hvr-bounce-to-left:focus:before, .hvr-bounce-to-left:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
