@@ -248,3 +248,17 @@
         @include bounce-to-left();
     }
 }
+
+@import "effects/background-transitions/radial-out";
+@if $includeClasses {
+    .#{$nameSpace}-radial-out {
+        @include radial-out();
+    }
+}
+
+@import "effects/background-transitions/radial-in";
+@if $includeClasses {
+    .#{$nameSpace}-radial-in {
+        @include radial-in();
+    }
+}
