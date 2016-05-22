@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
-var autoprefixer = require('autoprefixer');
 var gls = require('gulp-live-server');
 var sassLint = require('gulp-sass-lint');
 var browserSync = require('browser-sync');
@@ -42,7 +41,6 @@ gulp.task('deploy', ['build'], function() {
         .pipe(ghPages());
 });
 
-// 监视 Sass 文件的改动，如果发生变更，运行 'sass' 任务，并且重载文件
 gulp.task('serve', ['sass', 'jade'], function() {
     browserSync({
         server: {
