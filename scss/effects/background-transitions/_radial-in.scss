@@ -6,7 +6,7 @@
     @include hacks();
     position: relative;
     overflow: hidden;
-    background:$hoverColor!important;
+    background:$hoverColor!important;//fuck
     @include prefixed(transition-duration,$mediumDuration);
     &:before{
         content: "";

@@ -262,3 +262,10 @@
         @include radial-in();
     }
 }
+
+@import "effects/background-transitions/_shutter-in-horizontal";
+@if $includeClasses {
+    .#{$nameSpace}-shutter-in-horizontal {
+        @include shutter-in-horizontal();
+    }
+}
