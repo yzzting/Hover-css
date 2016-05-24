@@ -269,3 +269,10 @@
         @include shutter-in-horizontal();
     }
 }
+
+@import "effects/background-transitions/_shutter-out-horizontal";
+@if $includeClasses {
+    .#{$nameSpace}-shutter-out-horizontal {
+        @include shutter-out-horizontal();
+    }
+}

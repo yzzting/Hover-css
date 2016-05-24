@@ -1,0 +1,30 @@
+/**
+ * shutter-out-horizontal
+ */
+@mixin shutter-out-horizontal {
+    @include hacks();
+    @include prefixed(transition-duration,$mediumDuration);
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $hoverColor;
+        @include prefixed(transform,scaleX(0));
+        @include prefixed(transform-origin,50% 100%);
+        @include prefixed(transition-duration,$mediumDuration);
+        @include prefixed(transition-duration,transform);
+        @include prefixed(transition-timing-function,ease-out);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            @include prefixed(transform,scaleX(1));
+        }
+    }
+}
