@@ -6,6 +6,7 @@ var jade = require('gulp-jade');
 var gls = require('gulp-live-server');
 var sassLint = require('gulp-sass-lint');
 var browserSync = require('browser-sync');
+var ghPages = require('gulp-gh-pages');
 var reload = browserSync.reload;
 
 gulp.task('sass', function() {
