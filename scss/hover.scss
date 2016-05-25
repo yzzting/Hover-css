@@ -283,3 +283,24 @@
         @include shutter-out-vertical();
     }
 }
+
+@import "effects/background-transitions/_shutter-in-vertical";
+@if $includeClasses {
+    .#{$nameSpace}-shutter-in-vertical {
+        @include shutter-in-vertical();
+    }
+}
+
+@import "effects/background-transitions/rectangle-in";
+@if $includeClasses {
+    .#{$nameSpace}-rectangle-in {
+        @include rectangle-in();
+    }
+}
+
+@import "effects/background-transitions/rectangle-out";
+@if $includeClasses {
+    .#{$nameSpace}-rectangle-out {
+        @include rectangle-out();
+    }
+}
