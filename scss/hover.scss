@@ -276,3 +276,10 @@
         @include shutter-out-horizontal();
     }
 }
+
+@import "effects/background-transitions/_shutter-out-vertical";
+@if $includeClasses {
+    .#{$nameSpace}-shutter-out-vertical {
+        @include shutter-out-vertical();
+    }
+}
