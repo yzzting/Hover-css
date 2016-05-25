@@ -304,3 +304,24 @@
         @include rectangle-out();
     }
 }
+
+@import "effects/border-transitions/border-fade";
+@if $includeClasses {
+    .#{$nameSpace}-border-fade {
+        @include border-fade();
+    }
+}
+
+@import "effects/border-transitions/hollow";
+@if $includeClasses {
+    .#{$nameSpace}-hollow {
+        @include hollow();
+    }
+}
+
+@import "effects/border-transitions/trim";
+@if $includeClasses {
+    .#{$nameSpace}-trim {
+        @include trim();
+    }
+}

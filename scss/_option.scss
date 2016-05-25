@@ -1,8 +1,8 @@
 $includeClasses: true;
 $nameSpace: hvr;
 
-$mediumDuration:.3s;
-$slowDuration:.5s;
+$mediumDuration:.3s!default;
+$slowDuration:.5s!default;
 
 
 //浏览器
@@ -12,5 +12,9 @@ $ms:fasle;
 $o:fasle;
 
 //color
-$hoverColor:rgb(146, 144, 250);
+$hoverColor:rgba(30, 26, 233, 0.83);
 $primaryColor:rgb(255, 150, 216);
+
+
+//width
+$borderWidth:4px;

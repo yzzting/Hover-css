@@ -6,7 +6,7 @@
     @include hacks();
     position: relative;
     overflow: hidden;
-    @include prefixed(transition-duration,$mediumDuration);
+    @include prefixed(transition-duration, $mediumDuration);
 
     &:before{
         content: "";
@@ -18,7 +18,7 @@
         bottom: 0;
         background:$hoverColor;
         @include prefixed(transform,scale(0));
-        @include prefixed(transition-duration,$mediumDuration);
+        @include prefixed(transition-duration, $mediumDuration);
         @include prefixed(transition-property,transform);
         @include prefixed(transition-timing-function,ease-out);
     }
