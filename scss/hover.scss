@@ -312,6 +312,8 @@
     }
 }
 
+/*border-transitions*/
+
 @import "effects/border-transitions/hollow";
 @if $includeClasses {
     .#{$nameSpace}-hollow {
