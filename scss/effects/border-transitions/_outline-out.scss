@@ -1,0 +1,29 @@
+/**
+ * outline-out
+ */
+
+@mixin outline-out {
+    @include hacks();
+    position: relative;
+
+    &:before{
+        content: "";
+        position: absolute;
+        border: $primaryColor solid $innerBorderWidth;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        @include prefixed(transition-duration,$mediumDuration);
+        @include prefixed(transition-property,"top, right, bottom, left");
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        top: -($innerBorderWidth + $outerBorderWidth);
+        bottom: -($innerBorderWidth + $outerBorderWidth);
+        left: -($innerBorderWidth + $outerBorderWidth);
+        right: -($innerBorderWidth + $outerBorderWidth);
+    }
+}

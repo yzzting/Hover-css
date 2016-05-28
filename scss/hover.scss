@@ -327,3 +327,24 @@
         @include trim();
     }
 }
+
+@import "effects/border-transitions/outline-out";
+@if $includeClasses {
+    .#{$nameSpace}-outline-out {
+        @include outline-out();
+    }
+}
+
+@import "effects/border-transitions/outline-in";
+@if $includeClasses {
+    .#{$nameSpace}-outline-in {
+        @include outline-in();
+    }
+}
+
+@import "effects/border-transitions/ripple-out";
+@if $includeClasses {
+    .#{$nameSpace}-ripple-out {
+        @include ripple-out();
+    }
+}

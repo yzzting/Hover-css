@@ -1,0 +1,32 @@
+/**
+ * outline-in
+ */
+
+@mixin outline-in {
+    @include hacks();
+    position: relative;
+
+    &:before{
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        opacity: 0;
+        border: $primaryColor solid $innerBorderWidth;
+        top: -($innerBorderWidth + $outerBorderWidth) * 2;
+        bottom: -($innerBorderWidth + $outerBorderWidth) * 2;
+        left: -($innerBorderWidth + $outerBorderWidth) * 2;
+        right: -($innerBorderWidth + $outerBorderWidth) * 2;
+        @include prefixed(transition-duration,$mediumDuration);
+        @include prefixed(transition-property,"top, right, bottom, left");
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        top: -($innerBorderWidth + $outerBorderWidth);
+        bottom: -($innerBorderWidth + $outerBorderWidth);
+        left: -($innerBorderWidth + $outerBorderWidth);
+        right: -($innerBorderWidth + $outerBorderWidth);
+        opacity: 1;
+    }
+}

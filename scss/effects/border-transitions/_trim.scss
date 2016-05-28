@@ -2,8 +2,6 @@
  * trim
  */
 @mixin trim {
-    $innerBorderWidth: 4px;
-    $outerBorderWidth: 4px;
     @include hacks();
     position: relative;
 
