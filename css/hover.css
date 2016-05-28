@@ -1777,3 +1777,153 @@
   .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
     -webkit-animation-name: hvr-ripple-out;
     animation-name: hvr-ripple-out; }
+
+/**
+ * ripple-in
+ */
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; } }
+
+@keyframes hvr-ripple-in {
+  100% {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; } }
+
+.hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative; }
+  .hvr-ripple-in:before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border: #ff96d8 solid 4px;
+    top: -16px;
+    bottom: -16px;
+    left: -16px;
+    right: -16px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+  .hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
+    -webkit-animation-name: hvr-ripple-in;
+    animation-name: hvr-ripple-in; }
+
+/**
+ * round-corners
+ */
+.hvr-round-corners {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius; }
+  .hvr-round-corners:active, .hvr-round-corners:focus, .hvr-round-corners:hover {
+    border-radius: 1rem; }
+
+/**
+ * underline-from-left
+ */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden; }
+  .hvr-underline-from-left:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background: rgba(30, 26, 233, 0.83);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0; }
+
+/**
+ * underline-from-center
+ */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden; }
+  .hvr-underline-from-center:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 4px;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    background: rgba(30, 26, 233, 0.83);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: right,left;
+    transition-property: right,left;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    right: 0;
+    left: 0; }
+
+/**
+ * underline-from-right
+ */
+.hvr-underline-from-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden; }
+  .hvr-underline-from-right:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 4px;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background: rgba(30, 26, 233, 0.83);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+    left: 0; }
