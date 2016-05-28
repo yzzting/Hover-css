@@ -1,0 +1,37 @@
+/**
+ * ripple-in
+ */
+
+  @include keyframes(#{$nameSpace}-ripple-in) {
+      100% {
+          opacity: 1;
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+      }
+  }
+
+ @mixin ripple-in {
+     @include hacks();
+
+     position: relative;
+
+     &:before{
+         content: "";
+         position: absolute;
+         opacity: 0;
+         border: $primaryColor solid $innerBorderWidth;
+         top: -($innerBorderWidth + $outerBorderWidth + 8);
+         bottom: -($innerBorderWidth + $outerBorderWidth + 8);
+         left: -($innerBorderWidth + $outerBorderWidth + 8);
+         right: -($innerBorderWidth + $outerBorderWidth + 8);
+         @include prefixed(animation-duration,1s);
+     }
+
+     &:hover:before,
+     &:focus:before,
+     &:active:before {
+         @include prefixed(animation-name,#{$nameSpace}-ripple-in);
+     }
+ }
