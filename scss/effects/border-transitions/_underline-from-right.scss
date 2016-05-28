@@ -1,0 +1,28 @@
+/**
+ * underline-from-right
+ */
+
+@mixin underline-from-right {
+    @include hacks();
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 4px;
+        bottom:0;
+        left:100%;
+        right:0;
+        background: $hoverColor;
+        @include prefixed(transition-duration,$mediumDuration);
+        @include prefixed(transition-property,"left");
+        @include prefixed(transition-timing-function, ease-out);
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        left: 0;
+    }
+}

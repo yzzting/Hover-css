@@ -1,0 +1,15 @@
+/**
+ * round-corners
+ */
+
+@mixin round-corners {
+    @include hacks();
+
+    @include prefixed(transition-duration,$mediumDuration);
+    @include prefixed(transition-property,border-radius);
+    &:active,
+    &:focus,
+    &:hover {
+        border-radius: 1rem;
+    }
+}

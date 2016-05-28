@@ -355,3 +355,31 @@
         @include ripple-in();
     }
 }
+
+@import "effects/border-transitions/round-corners";
+@if $includeClasses {
+    .#{$nameSpace}-round-corners {
+        @include round-corners();
+    }
+}
+
+@import "effects/border-transitions/underline-from-left";
+@if $includeClasses {
+    .#{$nameSpace}-underline-from-left {
+        @include underline-from-left();
+    }
+}
+
+@import "effects/border-transitions/underline-from-center";
+@if $includeClasses {
+    .#{$nameSpace}-underline-from-center {
+        @include underline-from-center();
+    }
+}
+
+@import "effects/border-transitions/underline-from-right";
+@if $includeClasses {
+    .#{$nameSpace}-underline-from-right {
+        @include underline-from-right();
+    }
+}
