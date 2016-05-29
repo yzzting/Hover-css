@@ -397,3 +397,19 @@
         @include underline-reveal();
     }
 }
+
+/*Shadow and Glow Transitions*/
+
+@import "effects/shadow-and-glow-transitions/shadow";
+@if $includeClasses {
+    .#{$nameSpace}-shadow {
+        @include shadow();
+    }
+}
+
+@import "effects/shadow-and-glow-transitions/glow-shadow";
+@if $includeClasses {
+    .#{$nameSpace}-glow-shadow {
+        @include glow-shadow();
+    }
+}
