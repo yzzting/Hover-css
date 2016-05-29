@@ -383,3 +383,17 @@
         @include underline-from-right();
     }
 }
+
+@import "effects/border-transitions/reveal";
+@if $includeClasses {
+    .#{$nameSpace}-reveal {
+        @include reveal();
+    }
+}
+
+@import "effects/border-transitions/underline-reveal";
+@if $includeClasses {
+    .#{$nameSpace}-underline-reveal {
+        @include underline-reveal();
+    }
+}
