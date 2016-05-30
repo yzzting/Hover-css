@@ -413,3 +413,38 @@
         @include glow-shadow();
     }
 }
+
+@import "effects/shadow-and-glow-transitions/float-shadow";
+@if $includeClasses {
+    .#{$nameSpace}-float-shadow {
+        @include float-shadow();
+    }
+}
+
+@import "effects/shadow-and-glow-transitions/glow";
+@if $includeClasses {
+    .#{$nameSpace}-glow {
+        @include glow();
+    }
+}
+
+@import "effects/shadow-and-glow-transitions/shadow-radial";
+@if $includeClasses {
+    .#{$nameSpace}-shadow-radial {
+        @include shadow-radial();
+    }
+}
+
+@import "effects/shadow-and-glow-transitions/box-shadow-outset";
+@if $includeClasses {
+    .#{$nameSpace}-box-shadow-outset {
+        @include box-shadow-outset();
+    }
+}
+
+@import "effects/shadow-and-glow-transitions/box-shadow-inset";
+@if $includeClasses {
+    .#{$nameSpace}-box-shadow-inset {
+        @include box-shadow-inset();
+    }
+}
