@@ -19,8 +19,8 @@
         background:$hoverColor;
         @include prefixed(transform,scale(0));
         @include prefixed(transition-duration, $mediumDuration);
-        @include prefixed(transition-property,transform);
-        @include prefixed(transition-timing-function,ease-out);
+        @include prefixed(transition-property, transform);
+        @include prefixed(transition-timing-function, ease-out);
     }
 
     &:active,

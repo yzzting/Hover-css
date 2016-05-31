@@ -48,7 +48,6 @@ gulp.task('serve', ['sass', 'jade'], function() {
             baseDir: 'dist'
         }
     });
-    gulp.watch('./scss/main.scss', ['sass']);
     gulp.watch('./scss/effects/*.scss', ['sass']);
     gulp.watch('./scss/effects/**/*.scss', ['sass']);
     gulp.watch('./scss/page/*.scss', ['sass']);
@@ -56,4 +55,4 @@ gulp.task('serve', ['sass', 'jade'], function() {
     gulp.watch('./template/jade/**/*.jade', ['jade']);
 });
 
-gulp.task('default', ['jade', 'sass', 'serve', 'sass-lint']);
+gulp.task('default', ['jade', 'sass', 'serve', 'sass-lint','watch']);

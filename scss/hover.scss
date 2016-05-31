@@ -448,3 +448,33 @@
         @include box-shadow-inset();
     }
 }
+
+/* Speech Bubbles */
+
+@import "effects/speech-bubbles/bubble-top";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-top {
+        @include bubble-top();
+    }
+}
+
+@import "effects/speech-bubbles/bubble-right";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-right {
+        @include bubble-right();
+    }
+}
+
+@import "effects/speech-bubbles/bubble-bottom";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-bottom {
+        @include bubble-bottom();
+    }
+}
+
+@import "effects/speech-bubbles/bubble-left";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-left {
+        @include bubble-left();
+    }
+}
