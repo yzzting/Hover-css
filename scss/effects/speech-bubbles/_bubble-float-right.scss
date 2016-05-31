@@ -1,0 +1,28 @@
+/**
+ * bubble-float-right
+ */
+@mixin bubble-float-right {
+    @include hacks();
+    position: relative;
+    @include prefixed(transition-duration,$mediumDuration);
+    @include prefixed(transition-property,transform);
+    &:before {
+        position: absolute;
+        content: '';
+        border-style: solid;
+        border-width: $tipHeight 0 $tipHeight $tipWidth;
+		border-color: transparent transparent transparent $primaryColor;
+        right:0;
+        top: cale(50% - #{$tipHeight});
+        @include prefixed(transition-duration,$mediumDuration);
+        @include prefixed(transition-property,transform);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        @include prefixed(transform,translateX(-($tipHeight)));
+        &:before {
+            @include prefixed(transform,translateX(($tipHeight)));
+        }
+    }
+}

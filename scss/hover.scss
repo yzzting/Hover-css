@@ -478,3 +478,31 @@
         @include bubble-left();
     }
 }
+
+@import "effects/speech-bubbles/bubble-float-top";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-float-top {
+        @include bubble-float-top();
+    }
+}
+
+@import "effects/speech-bubbles/bubble-float-right";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-float-right {
+        @include bubble-float-right();
+    }
+}
+
+@import "effects/speech-bubbles/bubble-float-bottom";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-float-bottom {
+        @include bubble-float-bottom();
+    }
+}
+
+@import "effects/speech-bubbles/bubble-float-left";
+@if $includeClasses {
+    .#{$nameSpace}-bubble-float-left {
+        @include bubble-float-left();
+    }
+}
