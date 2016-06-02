@@ -506,3 +506,33 @@
         @include bubble-float-left();
     }
 }
+
+/*curls*/
+
+@import "effects/curls/curl-top-left";
+@if $includeClasses {
+    .#{$nameSpace}-curl-top-left {
+        @include curl-top-left();
+    }
+}
+
+@import "effects/curls/curl-top-right";
+@if $includeClasses {
+    .#{$nameSpace}-curl-top-right {
+        @include curl-top-right();
+    }
+}
+
+@import "effects/curls/curl-bottom-right";
+@if $includeClasses {
+    .#{$nameSpace}-curl-bottom-right {
+        @include curl-bottom-right();
+    }
+}
+
+@import "effects/curls/curl-bottom-left";
+@if $includeClasses {
+    .#{$nameSpace}-curl-bottom-left {
+        @include curl-bottom-left();
+    }
+}

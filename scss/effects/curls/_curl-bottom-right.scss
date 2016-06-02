@@ -1,0 +1,36 @@
+/**
+ * curl-bottom-right
+ */
+
+@mixin curl-bottom-right {
+    @include hacks();
+
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        height: 0;
+		width: 0;
+		bottom: 0;
+		right: 0;
+        background: linear-gradient(
+			-225deg,
+			$revealAreaColor 45%,
+			$curlLineColor 50%,
+			$curlTransitionColor 56%,
+			$curlLastColor 80%
+		);
+        z-index: 1000;
+        box-shadow: -1px -1px 1px rgba(0,0,0,.4);
+        @include prefixed(transition-duration, $mediumDuration);
+        @include prefixed(transition-property, "width,height");
+    }
+
+    &:hover:before,
+	&:focus:before,
+	&:active:before {
+        width: $curlWidth;
+        height: $curlHeight;
+    }
+}
