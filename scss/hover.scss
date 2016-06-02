@@ -536,3 +536,26 @@
         @include curl-bottom-left();
     }
 }
+
+/* Icons */
+
+@import "effects/icons/icon-back";
+@if $includeClasses {
+    .#{$nameSpace}-icon-back {
+        @include icon-back();
+    }
+}
+
+@import "effects/icons/icon-forward";
+@if $includeClasses {
+    .#{$nameSpace}-icon-forward {
+        @include icon-forward();
+    }
+}
+
+@import "effects/icons/icon-down";
+@if $includeClasses {
+    .#{$nameSpace}-icon-down {
+        @include icon-down();
+    }
+}

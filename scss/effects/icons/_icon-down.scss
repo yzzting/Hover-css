@@ -1,0 +1,40 @@
+/**
+ * icon-forward
+ */
+
+ @include keyframes(#{$nameSpace}-icon-down) {
+     0%,
+ 	50%,
+ 	100% {
+ 		@include prefixed(transform, translateY(0));
+ 	}
+ 	25%,
+ 	75% {
+ 		@include prefixed(transform, translateY(6px));
+ 	}
+ }
+
+@mixin icon-down {
+    @include hacks();
+    position: relative;
+    padding-right: 2.2em!important;
+    @include prefixed(animation-duration, $fastDuration);
+    &:before {
+        content: "\f0ab";
+        position: absolute;
+        right:1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+        @include prefixed(transform,translateZ(0));
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        &:before {
+            @include prefixed(animation, #{$nameSpace}-icon-down);
+            @include prefixed(animation-duration, .75s);
+            @include prefixed(animation-timing-function, ease-out);
+        }
+    }
+}

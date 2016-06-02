@@ -1,9 +1,9 @@
 $includeClasses: true;
 $nameSpace: hvr;
 
-$mediumDuration:.3s!default;
-$slowDuration:.5s!default;
-
+$mediumDuration: .3s!default;
+$slowDuration: .5s!default;
+$fastDuration: .1s!default;
 
 //浏览器
 $webkit:true;
@@ -20,7 +20,7 @@ $shadowColor: rgba(0, 0, 0, 0.75);
 $revealAreaColor: white;
 $curlLineColor: #aaa;
 $curlTransitionColor: #ccc;
-$curlLastColor: white;		
+$curlLastColor: white;
 
 //width
 $borderWidth:4px;
