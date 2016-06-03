@@ -587,3 +587,31 @@
         @include icon-grow();
     }
 }
+
+@import "effects/icons/icon-shrink";
+@if $includeClasses {
+    .#{$nameSpace}-icon-shrink {
+        @include icon-shrink();
+    }
+}
+
+@import "effects/icons/icon-pulse";
+@if $includeClasses {
+    .#{$nameSpace}-icon-pulse {
+        @include icon-pulse();
+    }
+}
+
+@import "effects/icons/icon-pulse-grow";
+@if $includeClasses {
+    .#{$nameSpace}-icon-pulse-grow {
+        @include icon-pulse-grow();
+    }
+}
+
+@import "effects/icons/icon-pulse-shrink";
+@if $includeClasses {
+    .#{$nameSpace}-icon-pulse-shrink {
+        @include icon-pulse-shrink();
+    }
+}

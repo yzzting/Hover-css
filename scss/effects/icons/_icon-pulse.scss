@@ -1,0 +1,36 @@
+/**
+ * icon-pulse
+ */
+ @include keyframes(#{$nameSpace}-icon-pulse) {
+     25%{
+         @include prefixed(transform,scale(1.3));
+     }
+
+     75%{
+         @include prefixed(transform,scale(0.7));
+     }
+ }
+
+@mixin icon-pulse {
+    @include hacks();
+    position: relative;
+    padding-right: 2.4em!important;
+    &:before {
+        content: "\f015";
+        position: absolute;
+        right:1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        &:before {
+            @include prefixed(animation-name,#{$nameSpace}-icon-pulse);
+            @include prefixed(animation-duration,1s);
+            @include prefixed(animation-timing-function,linear);
+            @include prefixed(animation-iteration-count,infinite);
+        }
+    }
+}

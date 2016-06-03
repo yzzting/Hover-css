@@ -1,0 +1,34 @@
+/**
+ * icon-pulse-grow
+ */
+
+  @include keyframes(#{$nameSpace}-icon-pulse-shrink) {
+      to {
+  		@include prefixed(transform, scale(.8));
+  	}
+  }
+
+ @mixin icon-pulse-shrink {
+     @include hacks();
+     position: relative;
+     padding-right: 2.4em!important;
+     &:before {
+         content: "\f015";
+         position: absolute;
+         right:1em;
+         padding: 0 1px;
+         font-family: FontAwesome;
+     }
+
+     &:hover,
+     &:focus,
+     &:active {
+         &:before {
+             @include prefixed(animation-name,#{$nameSpace}-icon-pulse-shrink);
+             @include prefixed(animation-duration, $mediumDuration);
+             @include prefixed(animation-timing-function,linear);
+             @include prefixed(animation-iteration-count,infinite);
+             @include prefixed(animation-direction, alternate);
+         }
+     }
+ }
