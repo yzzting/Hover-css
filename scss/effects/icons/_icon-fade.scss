@@ -1,29 +1,26 @@
 /**
- * icon-forward
+ * icon-fade
  */
-
-
-@mixin icon-forward {
+@mixin icon-fade {
     @include hacks();
     position: relative;
     padding-right: 2.4em!important;
+    overflow: hidden;
     &:before {
-        content: "\f138";
+        content: "\f00c";
         position: absolute;
         right:1em;
         padding: 0 1px;
         font-family: FontAwesome;
-        @include prefixed(transform,translateZ(0));
         @include prefixed(transition-duration, $mediumDuration);
-        @include prefixed(transition-property, transform);
-        @include prefixed(transition-timing-function, ease-out);
+		@include prefixed(transition-property, color);
     }
 
     &:hover,
     &:focus,
     &:active {
         &:before {
-            @include prefixed(transform, translateX(4px));
+            color: rgb(2, 140, 20);
         }
     }
 }

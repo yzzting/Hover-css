@@ -559,3 +559,31 @@
         @include icon-down();
     }
 }
+
+@import "effects/icons/icon-up";
+@if $includeClasses {
+    .#{$nameSpace}-icon-up {
+        @include icon-up();
+    }
+}
+
+@import "effects/icons/icon-spin";
+@if $includeClasses {
+    .#{$nameSpace}-icon-spin {
+        @include icon-spin();
+    }
+}
+
+@import "effects/icons/icon-fade";
+@if $includeClasses {
+    .#{$nameSpace}-icon-fade {
+        @include icon-fade();
+    }
+}
+
+@import "effects/icons/icon-grow";
+@if $includeClasses {
+    .#{$nameSpace}-icon-grow {
+        @include icon-grow();
+    }
+}

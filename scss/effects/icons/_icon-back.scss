@@ -6,8 +6,7 @@
 @mixin icon-back {
     @include hacks();
     position: relative;
-    padding-left: 2.2em!important;
-    @include prefixed(transition-duration, $fastDuration);
+    padding-left: 2.4em!important;
     &:before {
         content: "\f137";
         position: absolute;
@@ -15,6 +14,7 @@
         padding: 0 1px;
         font-family: FontAwesome;
         @include prefixed(transform,translateZ(0));
+        @include prefixed(transition-duration, $mediumDuration);
         @include prefixed(transition-property, transform);
         @include prefixed(transition-timing-function, ease-out);
     }
