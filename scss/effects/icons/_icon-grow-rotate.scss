@@ -1,0 +1,28 @@
+/**
+ * icon-grow-rotate
+ */
+@mixin icon-grow-rotate {
+    @include hacks();
+    position: relative;
+    padding-right: 2.4em !important;
+    overflow: hidden;
+    @include prefixed(transition-duration, $slowDuration);
+    &:before {
+        content: "\f095";
+        position: absolute;
+        right: 1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+        @include prefixed(transform, translateZ(0));
+        @include prefixed(transition-duration, $slowDuration);
+        @include prefixed(transition-property, transform);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            @include prefixed(transform,rotate(15deg) scale(1.3));
+            @include prefixed(transition-timing-function,east-out);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+/**
+ * icon-rotate
+ */
+@mixin icon-rotate {
+    @include hacks();
+    position: relative;
+    padding-right: 2.4em !important;
+    overflow: hidden;
+    @include prefixed(transition-duration, $slowDuration);
+    &:before {
+        content: "\f0c6";
+        position: absolute;
+        right: 1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+        @include prefixed(transform, translateZ(0));
+        @include prefixed(transition-duration, $slowDuration);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            @include prefixed(transform,rotate(30deg));
+        }
+    }
+}

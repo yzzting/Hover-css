@@ -2,7 +2,7 @@
  * icon-push
  */
  @include keyframes(#{$nameSpace}-icon-push) {
-     to {
+     50% {
          @include prefixed(transform,scale(0.5));
      }
  };
