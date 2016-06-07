@@ -1,0 +1,27 @@
+/**
+ * icon-sink
+ */
+
+ @mixin icon-sink {
+     @include hacks();
+     position: relative;
+     padding-right: 2.4em!important;
+     overflow: hidden;
+     &:before {
+         content: "\f0ab";
+         position: absolute;
+         right:1em;
+         padding: 0 1px;
+         font-family: FontAwesome;
+         @include prefixed(transition-duration, $mediumDuration);
+         @include prefixed(transition-property, transform);
+     }
+
+     &:hover,
+     &:focus,
+     &:active {
+         &:before {
+             @include prefixed(transform, translateY(4px));
+         }
+     }
+ }

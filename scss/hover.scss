@@ -650,3 +650,59 @@
         @include icon-grow-rotate();
     }
 }
+
+@import "effects/icons/icon-float";
+@if $includeClasses {
+    .#{$nameSpace}-icon-float {
+        @include icon-float();
+    }
+}
+
+@import "effects/icons/icon-sink";
+@if $includeClasses {
+    .#{$nameSpace}-icon-sink {
+        @include icon-sink();
+    }
+}
+
+@import "effects/icons/icon-wobble-horizontal";
+@if $includeClasses {
+    .#{$nameSpace}-icon-wobble-horizontal {
+        @include icon-wobble-horizontal();
+    }
+}
+
+@import "effects/icons/icon-wobble-vertical";
+@if $includeClasses {
+    .#{$nameSpace}-icon-wobble-vertical {
+        @include icon-wobble-vertical();
+    }
+}
+
+@import "effects/icons/icon-buzz";
+@if $includeClasses {
+    .#{$nameSpace}-icon-buzz {
+        @include icon-buzz();
+    }
+}
+
+@import "effects/icons/icon-buzz-out";
+@if $includeClasses {
+    .#{$nameSpace}-icon-buzz-out {
+        @include icon-buzz-out();
+    }
+}
+
+@import "effects/icons/icon-float-away";
+@if $includeClasses {
+    .#{$nameSpace}-icon-float-away {
+        @include icon-float-away();
+    }
+}
+
+@import "effects/icons/icon-sink-away";
+@if $includeClasses {
+    .#{$nameSpace}-icon-sink-away {
+        @include icon-sink-away();
+    }
+}
