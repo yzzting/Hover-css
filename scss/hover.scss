@@ -720,3 +720,12 @@
         @include icon-face();
     }
 }
+
+/*magic*/
+
+@import "effects/magic/magic";
+@if $includeClasses {
+    .#{$nameSpace}-magic {
+        @include magic();
+    }
+}
