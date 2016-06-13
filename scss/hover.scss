@@ -706,3 +706,17 @@
         @include icon-sink-away();
     }
 }
+
+@import "effects/icons/icon-gavel-rotate";
+@if $includeClasses {
+    .#{$nameSpace}-icon-gavel-rotate {
+        @include icon-gavel-rotate();
+    }
+}
+
+@import "effects/icons/icon-face";
+@if $includeClasses {
+    .#{$nameSpace}-icon-face {
+        @include icon-face();
+    }
+}

@@ -1,0 +1,26 @@
+/**
+ * icon-gavel-rotate
+ */
+
+@mixin icon-gavel-rotate {
+    @include hacks();
+    position: relative;
+    padding-right: 2.4em !important;
+    overflow: hidden;
+    &:before {
+        content: "\f0e3";
+        position: absolute;
+        right: 1em;
+        padding: 0 1px;
+        font-family: FontAwesome;
+        @include prefixed(transition-duration, $mediumDuration);
+        @include prefixed(transition-property, transform);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            @include prefixed(transform, rotate(-30deg));
+        }
+    }
+}
