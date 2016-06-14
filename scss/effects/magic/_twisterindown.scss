@@ -1,0 +1,34 @@
+/**
+ * twisterindown
+ */
+
+ @include keyframes(#{$nameSpace}-twisterindown) {
+     0%{
+         @include prefixed(transform-origin, "0 100%");
+         @include prefixed(transform, scale(0.0) rotate(360deg) translateY(-100%));
+         opacity: 0;
+     }
+     30% {
+         @include prefixed(transform-origin, "0 100%");
+         @include prefixed(transform, scale(0.0) rotate(360deg) translateY(-100%));
+     }
+     100% {
+         @include prefixed(transform-origin, "100% 100%");
+         @include prefixed(transform, scale(1.1) rotate(0deg) translateY(0));
+         opacity: 1;
+     }
+ }
+
+@mixin twisterindown {
+    @include hacks();
+    @include prefixed(transform, tranlateZ(0));
+
+    &:hover,
+    &:active,
+    &:focus {
+        @include prefixed(animation-name, #{$nameSpace}-twisterindown);
+        @include prefixed(animation-duration, $slowestDuration);
+        @include prefixed(animation-delay, $mediumDuration);
+        @include prefixed(animation-timing-function, ease-out);
+    }
+}

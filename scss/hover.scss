@@ -729,3 +729,17 @@
         @include magic();
     }
 }
+
+@import "effects/magic/twisterinup";
+@if $includeClasses {
+    .#{$nameSpace}-twisterinup {
+        @include twisterinup();
+    }
+}
+
+@import "effects/magic/twisterindown";
+@if $includeClasses {
+    .#{$nameSpace}-twisterindown {
+        @include twisterindown();
+    }
+}
