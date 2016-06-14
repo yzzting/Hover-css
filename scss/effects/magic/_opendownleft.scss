@@ -1,0 +1,29 @@
+/**
+ * opendownleft
+ */
+
+@include keyframes(#{$nameSpace}-opendownleft) {
+    0% {
+        @include prefixed(transform-origin, "bottom left");
+        @include prefixed(transform, rotate(0deg));
+        @include prefixed(animation-timing-function, ease-out);
+    }
+    100% {
+        @include prefixed(transform-origin, "bottom left");
+        @include prefixed(transform, rotate(-110deg));
+        @include prefixed(animation-timing-function, ease-out-in);
+    }
+}
+
+@mixin opendownleft {
+    @include hacks();
+    @include prefixed(transform, translateZ(0));
+    &:active,
+    &:hover,
+    &:focus {
+        @include prefixed(animation-name, #{$nameSpace}-opendownleft);
+        @include prefixed(animation-duration, $slowestDuration);
+        @include prefixed(animation-delay, $mediumDuration);
+        @include prefixed(animation-fill-mode, forwards);
+    }
+}

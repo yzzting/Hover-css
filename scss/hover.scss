@@ -743,3 +743,17 @@
         @include twisterindown();
     }
 }
+
+@import "effects/magic/swap";
+@if $includeClasses {
+    .#{$nameSpace}-swap {
+        @include swap();
+    }
+}
+
+@import "effects/magic/opendownleft";
+@if $includeClasses {
+    .#{$nameSpace}-opendownleft {
+        @include opendownleft();
+    }
+}
