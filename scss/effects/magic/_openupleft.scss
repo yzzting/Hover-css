@@ -1,0 +1,29 @@
+/**
+ * openupleft
+ */
+
+ @include keyframes(#{$nameSpace}-openupleft) {
+     0% {
+         @include prefixed(transform-origin, "top left");
+         @include prefixed(transform, rotate(0deg));
+         @include prefixed(animation-timing-function, ease-out);
+     }
+     100% {
+         @include prefixed(transform-origin, "top left");
+         @include prefixed(transform, rotate(110deg));
+         @include prefixed(animation-timing-function, ease-out-in);
+     }
+ }
+
+ @mixin openupleft {
+     @include hacks();
+     @include prefixed(transform, translateZ(0));
+     &:active,
+     &:hover,
+     &:focus {
+         @include prefixed(animation-name, #{$nameSpace}-openupleft);
+         @include prefixed(animation-duration, $slowestDuration);
+         @include prefixed(animation-delay, $mediumDuration);
+         @include prefixed(animation-fill-mode, forwards);
+     }
+ }

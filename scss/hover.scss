@@ -757,3 +757,24 @@
         @include opendownleft();
     }
 }
+
+@import "effects/magic/opendownright";
+@if $includeClasses {
+    .#{$nameSpace}-opendownright {
+        @include opendownright();
+    }
+}
+
+@import "effects/magic/openupleft";
+@if $includeClasses {
+    .#{$nameSpace}-openupleft {
+        @include openupleft();
+    }
+}
+
+@import "effects/magic/openupright";
+@if $includeClasses {
+    .#{$nameSpace}-openupright {
+        @include openupright();
+    }
+}
