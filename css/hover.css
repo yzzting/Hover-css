@@ -3908,3 +3908,165 @@
     animation-delay: 0.3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
+
+/**
+ * opendownright
+ */
+@-webkit-keyframes hvr-opendownright {
+  0% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in; } }
+
+@keyframes hvr-opendownright {
+  0% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in; } }
+
+.hvr-opendownright {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-opendownright:active, .hvr-opendownright:hover, .hvr-opendownright:focus {
+    -webkit-animation-name: hvr-opendownright;
+    animation-name: hvr-opendownright;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * openupleft
+ */
+@-webkit-keyframes hvr-openupleft {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in; } }
+
+@keyframes hvr-openupleft {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in; } }
+
+.hvr-openupleft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-openupleft:active, .hvr-openupleft:hover, .hvr-openupleft:focus {
+    -webkit-animation-name: hvr-openupleft;
+    animation-name: hvr-openupleft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * openupright
+ */
+@-webkit-keyframes hvr-openupright {
+  0% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  100% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(-110deg);
+    transform: rotate(-110deg);
+    -webkit-transition-timing-function: ease-out-in;
+    transition-timing-function: ease-out-in; } }
+
+@keyframes hvr-openupright {
+  0% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  100% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(-110deg);
+    transform: rotate(-110deg);
+    -webkit-transition-timing-function: ease-out-in;
+    transition-timing-function: ease-out-in; } }
+
+.hvr-openupright {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-openupright:active, .hvr-openupright:hover, .hvr-openupright:focus {
+    -webkit-animation-name: hvr-openupright;
+    animation-name: hvr-openupright;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
