@@ -778,3 +778,31 @@
         @include openupright();
     }
 }
+
+@import "effects/magic/openuprightout";
+@if $includeClasses {
+    .#{$nameSpace}-openuprightout {
+        @include openuprightout();
+    }
+}
+
+@import "effects/magic/openupleftout";
+@if $includeClasses {
+    .#{$nameSpace}-openupleftout {
+        @include openupleftout();
+    }
+}
+
+@import "effects/magic/opendownrightout";
+@if $includeClasses {
+    .#{$nameSpace}-opendownrightout {
+        @include opendownrightout();
+    }
+}
+
+@import "effects/magic/opendownleftout";
+@if $includeClasses {
+    .#{$nameSpace}-opendownleftout {
+        @include opendownleftout();
+    }
+}

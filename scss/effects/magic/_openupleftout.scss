@@ -1,0 +1,32 @@
+/**
+ * openupleftout
+ */
+
+@include keyframes(#{$nameSpace}-openupleftout) {
+    0% {
+        @include prefixed(transform-origin, "top left");
+        @include prefixed(transform, rotate(0deg));
+        @include prefixed(transition-timing-function, ease-out);
+        opacity: 1;
+    }
+    100% {
+        @include prefixed(transform-origin, "top left");
+        @include prefixed(transform, rotate(110deg));
+        @include prefixed(transition-timing-function, ease-out-in);
+        opacity: 0;
+    }
+}
+
+@mixin openupleftout {
+    @include hacks();
+    @include prefixed(transform, translateZ(0));
+
+    &:active,
+    &:hover,
+    &:focus {
+        @include prefixed(animation-name, #{$nameSpace}-openupleftout);
+        @include prefixed(animation-duration, $slowestDuration);
+        @include prefixed(animation-delay, $mediumDuration);
+        @include prefixed(animation-fill-mode, forwards);
+    }
+}
