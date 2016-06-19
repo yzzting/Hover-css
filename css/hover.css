@@ -4070,3 +4070,235 @@
     animation-delay: 0.3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
+
+/**
+ * openuprightout
+ */
+@-webkit-keyframes hvr-openuprightout {
+  0% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(-110deg);
+    transform: rotate(-110deg);
+    -webkit-transition-timing-function: ease-out-in;
+    transition-timing-function: ease-out-in;
+    opacity: 0; } }
+
+@keyframes hvr-openuprightout {
+  0% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(-110deg);
+    transform: rotate(-110deg);
+    -webkit-transition-timing-function: ease-out-in;
+    transition-timing-function: ease-out-in;
+    opacity: 0; } }
+
+.hvr-openuprightout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-openuprightout:active, .hvr-openuprightout:hover, .hvr-openuprightout:focus {
+    -webkit-animation-name: hvr-openuprightout;
+    animation-name: hvr-openuprightout;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * openupleftout
+ */
+@-webkit-keyframes hvr-openupleftout {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-transition-timing-function: ease-out-in;
+    transition-timing-function: ease-out-in;
+    opacity: 0; } }
+
+@keyframes hvr-openupleftout {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-transition-timing-function: ease-out-in;
+    transition-timing-function: ease-out-in;
+    opacity: 0; } }
+
+.hvr-openupleftout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-openupleftout:active, .hvr-openupleftout:hover, .hvr-openupleftout:focus {
+    -webkit-animation-name: hvr-openupleftout;
+    animation-name: hvr-openupleftout;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * opendownrightout
+ */
+@-webkit-keyframes hvr-opendownrightout {
+  0% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in;
+    opacity: 0; } }
+
+@keyframes hvr-opendownrightout {
+  0% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in;
+    opacity: 0; } }
+
+.hvr-opendownrightout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-opendownrightout:active, .hvr-opendownrightout:hover, .hvr-opendownrightout:focus {
+    -webkit-animation-name: hvr-opendownrightout;
+    animation-name: hvr-opendownrightout;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * opendownleftout
+ */
+@-webkit-keyframes hvr-opendownleftout {
+  0% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(-110deg);
+    transform: rotate(-110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in;
+    opacity: 0; } }
+
+@keyframes hvr-opendownleftout {
+  0% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(-110deg);
+    transform: rotate(-110deg);
+    -webkit-animation-timing-function: ease-out-in;
+    animation-timing-function: ease-out-in;
+    opacity: 0; } }
+
+.hvr-opendownleftout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-opendownleftout:active, .hvr-opendownleftout:hover, .hvr-opendownleftout:focus {
+    -webkit-animation-name: hvr-opendownleftout;
+    animation-name: hvr-opendownleftout;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
