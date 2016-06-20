@@ -4302,3 +4302,191 @@
     animation-delay: 0.3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
+
+/**
+ * perspectivedown
+ */
+@-webkit-keyframes hvr-perspectivedown {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(-180deg);
+    transform: perspective(800px) rotateX(-180deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; } }
+
+@keyframes hvr-perspectivedown {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(-180deg);
+    transform: perspective(800px) rotateX(-180deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; } }
+
+.hvr-perspectivedown {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-perspectivedown:active, .hvr-perspectivedown:hover, .hvr-perspectivedown:focus {
+    -webkit-animation-name: hvr-perspectivedown;
+    animation-name: hvr-perspectivedown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * perspectiveup
+ */
+@-webkit-keyframes hvr-perspectiveup {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(180deg);
+    transform: perspective(800px) rotateX(180deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; } }
+
+@keyframes hvr-perspectiveup {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(180deg);
+    transform: perspective(800px) rotateX(180deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; } }
+
+.hvr-perspectiveup {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-perspectiveup:active, .hvr-perspectiveup:hover, .hvr-perspectiveup:focus {
+    -webkit-animation-name: hvr-perspectiveup;
+    animation-name: hvr-perspectiveup;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * perspectiveleft
+ */
+@-webkit-keyframes hvr-perspectiveleft {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; } }
+
+@keyframes hvr-perspectiveleft {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; } }
+
+.hvr-perspectiveleft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-perspectiveleft:active, .hvr-perspectiveleft:hover, .hvr-perspectiveleft:focus {
+    -webkit-animation-name: hvr-perspectiveleft;
+    animation-name: hvr-perspectiveleft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * perspectiveright
+ */
+@-webkit-keyframes hvr-perspectiveright {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; } }
+
+@keyframes hvr-perspectiveright {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; } }
+
+.hvr-perspectiveright {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-perspectiveright:active, .hvr-perspectiveright:hover, .hvr-perspectiveright:focus {
+    -webkit-animation-name: hvr-perspectiveright;
+    animation-name: hvr-perspectiveright;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
