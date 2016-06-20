@@ -20,7 +20,7 @@
 @mixin opendownrightout {
     @include hacks();
     @include prefixed(transform, translateZ(0));
-
+    
     &:active,
     &:hover,
     &:focus {

@@ -806,3 +806,31 @@
         @include opendownleftout();
     }
 }
+
+@import "effects/magic/perspectivedown";
+@if $includeClasses {
+    .#{$nameSpace}-perspectivedown {
+        @include perspectivedown();
+    }
+}
+
+@import "effects/magic/perspectiveup";
+@if $includeClasses {
+    .#{$nameSpace}-perspectiveup {
+        @include perspectiveup();
+    }
+}
+
+@import "effects/magic/perspectiveleft";
+@if $includeClasses {
+    .#{$nameSpace}-perspectiveleft {
+        @include perspectiveleft();
+    }
+}
+
+@import "effects/magic/perspectiveright";
+@if $includeClasses {
+    .#{$nameSpace}-perspectiveright {
+        @include perspectiveright();
+    }
+}

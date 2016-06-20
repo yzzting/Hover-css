@@ -1,0 +1,29 @@
+/**
+ * perspectiveright
+ */
+
+@include keyframes(#{$nameSpace}-perspectiveright) {
+    0%{
+        @include prefixed(transform, perspective(800px) rotateY(0deg));
+        @include prefixed(transform-origin, "100% 0");
+    }
+
+    100%{
+        @include prefixed(transform, perspective(800px) rotateY(-180deg));
+        @include prefixed(transform-origin, "100% 0");
+    }
+}
+
+@mixin perspectiveright {
+    @include hacks();
+    backface-visibility:visible!important;
+    @include prefixed(transform, translateZ(0));
+    &:active,
+    &:hover,
+    &:focus {
+        @include prefixed(animation-name, #{$nameSpace}-perspectiveright);
+        @include prefixed(animation-duration, $slowestDuration);
+        @include prefixed(animation-delay, $mediumDuration);
+        @include prefixed(animation-fill-mode, forwards);
+    }
+}
