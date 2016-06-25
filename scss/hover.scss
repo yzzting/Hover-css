@@ -834,3 +834,17 @@
         @include perspectiveright();
     }
 }
+
+@import "effects/magic/perspectivedownreturn";
+@if $includeClasses {
+    .#{$nameSpace}-perspectivedownreturn {
+        @include perspectivedownreturn();
+    }
+}
+
+@import "effects/magic/perspectiveupreturn";
+@if $includeClasses {
+    .#{$nameSpace}-perspectiveupreturn {
+        @include perspectiveupreturn();
+    }
+}
