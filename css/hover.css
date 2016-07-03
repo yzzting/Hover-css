@@ -1996,6 +1996,19 @@
     transform: translateY(0);
     border-bottom-width: 4px; }
 
+/**
+ * ants
+ */
+@keyframes ants {
+  to {
+    background-position: 100%; } }
+
+.hvr-ants {
+  color: #ff96d8 !important;
+  border: 1em solid transparent;
+  background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, #ff96d8 0, #ff96d8 25%, white 0, white 50%) 0/0.6em 0.6em !important;
+  animation: ants 12s linear infinite; }
+
 /*Shadow and Glow Transitions*/
 /**
  * shadow
@@ -4484,6 +4497,104 @@
   .hvr-perspectiveright:active, .hvr-perspectiveright:hover, .hvr-perspectiveright:focus {
     -webkit-animation-name: hvr-perspectiveright;
     animation-name: hvr-perspectiveright;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * perspectivedownreturn
+ */
+@-webkit-keyframes hvr-perspectivedownreturn {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(-180deg);
+    transform: perspective(800px) rotateX(-180deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; } }
+
+@keyframes hvr-perspectivedownreturn {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(-180deg);
+    transform: perspective(800px) rotateX(-180deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%; } }
+
+.hvr-perspectivedownreturn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-perspectivedownreturn:active, .hvr-perspectivedownreturn:hover, .hvr-perspectivedownreturn:focus {
+    -webkit-animation-name: hvr-perspectivedownreturn;
+    animation-name: hvr-perspectivedownreturn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/**
+ * perspectiveupreturn
+ */
+@-webkit-keyframes hvr-perspectiveupreturn {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(-180deg);
+    transform: perspective(800px) rotateX(-180deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1; } }
+
+@keyframes hvr-perspectiveupreturn {
+  0% {
+    -webkit-transform: perspective(800px) rotateX(-180deg);
+    transform: perspective(800px) rotateX(-180deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0; }
+  100% {
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1; } }
+
+.hvr-perspectiveupreturn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .hvr-perspectiveupreturn:active, .hvr-perspectiveupreturn:hover, .hvr-perspectiveupreturn:focus {
+    -webkit-animation-name: hvr-perspectiveupreturn;
+    animation-name: hvr-perspectiveupreturn;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-delay: 0.3s;
