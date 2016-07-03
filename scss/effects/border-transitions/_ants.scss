@@ -1,0 +1,18 @@
+/**
+ * ants
+ */
+
+@keyframes ants {
+    to {
+        background-position: 100%;
+    }
+}
+
+@mixin ants {
+    color:$primaryColor!important;
+    border: 1em solid transparent;
+    background:
+        linear-gradient(white,white) padding-box,
+        repeating-linear-gradient(-45deg,$primaryColor 0 ,$primaryColor 25%,white 0,white 50%) 0 / .6em .6em!important;
+        animation: ants 12s linear infinite;
+}

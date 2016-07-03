@@ -398,6 +398,13 @@
     }
 }
 
+@import "effects/border-transitions/ants";
+@if $includeClasses {
+    .#{$nameSpace}-ants{
+        @include ants();
+    }
+}
+
 /*Shadow and Glow Transitions*/
 
 @import "effects/shadow-and-glow-transitions/shadow";
